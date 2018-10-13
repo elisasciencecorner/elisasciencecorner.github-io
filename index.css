@@ -1,0 +1,53 @@
+body{
+  margin: 0px;
+  background-color: #EEE;
+  font-family: sans-serif;
+  position: relative;
+}
+
+h1{
+  font-size: 3em;
+}
+
+p{
+  font-size: 1.5em;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #EEE;
+  font-size: 16px;
+  line-height: 42px;
+  padding: 15px 10px 50px 40px;
+  right: 0;
+  left: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 544px) {
+  footer {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
