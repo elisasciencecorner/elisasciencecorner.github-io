@@ -23,11 +23,13 @@
       $(window).scroll(function() {
         var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-        if (pagePosition > 50) {
+        var windowHeight = document.body.clientHeight;
+
+        if (pagePosition > windowHeight * 0.1) {
           showSection("about");
         }
 
-        if (pagePosition > 400) {
+        if (pagePosition > windowHeight * 0.35) {
           showSection("projects");
         }
       });
