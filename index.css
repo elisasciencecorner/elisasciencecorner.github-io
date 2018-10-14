@@ -110,7 +110,7 @@ nav a {
 
 .thumbnail {
   height: 300px;
-  width: 100%;
+  width: 300px;
   object-fit: cover;
   /* opacity: 1;
   transition: opacity 0.6s; */
