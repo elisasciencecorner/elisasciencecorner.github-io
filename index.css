@@ -2,6 +2,7 @@
   --main-bg-color: #022D41;
   --section-bg-color: #1AA6B7;
   --btn-bg-color: rgba(217, 236, 242, 0.5);
+  --side-margin: 20px;
 }
 
 body{
@@ -28,10 +29,10 @@ a {
   width: 100%;
   padding: 50px 0;
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 150px;
 }
 
-.carousel-container img {
+.carousel-img {
   object-fit: cover;
   width: 100%;
 }
@@ -40,7 +41,7 @@ a {
   position: absolute;
   text-align: center;
   left: 0;
-  top: 55%;
+  top: 50%;
   width: 450px;
   font-size: 40px;
   padding: 10px;
@@ -50,7 +51,8 @@ a {
 
 nav {
   position: absolute;
-  bottom: 40px;
+  /* bottom: 40px; */
+  top: 80%;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -63,7 +65,14 @@ nav a {
   width: 180px;
   padding: 5px 0;
   text-align: center;
-  box-shadow: 5px 5px darkgray;
+  box-shadow: 5px 5px var(--section-bg-color);
+}
+
+.nav-thumb {
+  width: 100%;
+  height: 90px;
+  object-fit: scale-down;
+  margin-bottom: 10px;
 }
 
 .section-title {
@@ -80,7 +89,7 @@ nav a {
   background-color: var(--section-bg-color);
   color: black;
   padding: 30px 45px;
-  margin: 20px;
+  margin: var(--side-margin);
   line-height: 26px;
   opacity: 0;
 }
@@ -89,9 +98,16 @@ nav a {
   margin: 10px 0;
 }
 
+.about-section .right {
+  text-align: right;
+  margin-top: 50px;
+  padding-left: 100px;
+}
+
 .projects-section {
   padding: 25px 0 150px 0;
   opacity: 0;
+  margin: 0 var(--side-margin);
 }
 
 .projects-container {
@@ -99,7 +115,6 @@ nav a {
   flex-direction: row;
   justify-content: space-around;
   background-color: var(--section-bg-color);
-  margin: 0 20px;
   padding: 20px 0;
 }
 
@@ -109,8 +124,8 @@ nav a {
 }
 
 .thumbnail {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   /* opacity: 1;
   transition: opacity 0.6s; */
@@ -122,9 +137,9 @@ nav a {
   background: var(--btn-bg-color);
   color: white;
   font-size: 22px;
-  padding-top: 12px;
+  padding: 12px 0;
   top: 75%;
-  bottom: 30px;
+  bottom: 20px;
   left: 5px;
   right: 5px;
   overflow: hidden;
@@ -142,7 +157,7 @@ footer {
   color: #EEE;
   font-size: 16px;
   line-height: 42px;
-  padding: 15px 10px 50px 20px;
+  padding: 15px 10px 50px var(--side-margin);
   right: 0;
   left: 0;
 }
@@ -159,12 +174,86 @@ footer a {
 
 
 @media screen and (max-width: 900px) {
+
+  .carousel-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  nav a {
+    font-size: 18px;
+    width: 110px;
+  }
+
+  .nav-thumb {
+    height: 75px;
+  }
+
 }
 
 @media screen and (max-width: 544px) {
+
+  :root {
+    --side-margin: 10px;
+  }
+  .carousel-container {
+    margin-bottom: 250px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    top: 65%;
+  }
+
+  nav a {
+    width: 150px;
+    margin: 20px;
+  }
+
+  .site-title {
+    font-size: 26px;
+    width: 280px;
+    padding: 5px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    width: 280px;
+    padding: 5px;
+  }
+
+  .about-section {
+    padding: 15px 20px;
+  }
+
+  .about-section .right {
+    padding-left: 50px;
+  }
+
   footer {
     padding: 10px;
     font-size: 13px;
     line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  nav a {
+    width: 120px;
+    margin: 15px;
+  }
+
+  .nav-thumb {
+    height: 65px;
   }
 }
