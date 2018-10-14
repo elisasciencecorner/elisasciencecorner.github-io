@@ -1,1 +1,116 @@
-helllo worlld
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Elisa Science Corner" />
+    <meta property="og:description" content="!" />
+
+    <title>Elisa Science Corner</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+      $(window).scroll(function() {
+        var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (pagePosition > 50) {
+          showSection("about");
+        }
+
+        if (pagePosition > 400) {
+          showSection("projects");
+        }
+      });
+
+
+      function showSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.style.opacity = "1";
+        section.style.transition = "0.5s ease 0.5s";
+      }
+
+    </script>
+
+  </head>
+
+
+  <body>
+    <div class="carousel-container">
+      <img src="img/03_s.jpg">
+
+      <div class="site-title">Elisa's Science Corner</div>
+
+      <nav>
+        <a href="#">Projects</a>
+        <a href="#">Collaboration</a>
+        <a href="#">For Students</a>
+        <a href="#">About Me</a>
+        <!-- <a href="#">Contact Me</a> -->
+      </nav>
+    </div>
+
+    <div class="section-title">Sharing Knowledge</div>
+    <div class="about-section" id="about">
+      <p>Welcome to my collection of past and present research projects, fascinating scientific things, from bench to mobile phone.</p>
+      <p>The goal of this website is to contribute actively in the dissemination of scientific knowledge to the general public and specifically to young students.</p>
+      <p>To show how science can impact everyday life is the first step to reduce the gap between daily discovery from the lab and the outside world.</p>
+    </div>
+
+    <div class="section-title">Latest Projects</div>
+    <div class="projects-section" id="projects">
+      <div class="projects-container">
+        <a class="card" href="#">
+          <img class="thumbnail"
+          src="img/HH_cKit,CD31.jpg"
+          alt=".">
+          <span class="card-description">
+            Breast Cancer
+          </span>
+        </a>
+
+        <a class="card" href="#">
+          <img class="thumbnail"
+          src="img/Icon_Algae.jpg"
+          alt=".">
+          <span class="card-description">
+            Toxic Algae
+          </span>
+        </a>
+
+        <a class="card" href="#">
+          <img class="thumbnail"
+          src="img/exosomes_Icon.png"
+          alt=".">
+          <span class="card-description">
+            Exosomes
+          </span>
+        </a>
+
+      </div>
+    </div>
+
+
+
+    <footer>
+      <ul>
+        <li>Website by <a href="https://www.marcovidonis.com" target="_none">Marco Vidonis</a></li>
+        <li>Design by Elisa Mazzega</li>
+        <li>© 2018</li>
+
+
+
+      </ul>
+    </footer>
+  </body>
+
+</html>

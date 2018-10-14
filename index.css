@@ -1,0 +1,170 @@
+:root {
+  --main-bg-color: #022D41;
+  --section-bg-color: #1AA6B7;
+  --btn-bg-color: rgba(217, 236, 242, 0.5);
+}
+
+body{
+  margin: 0px;
+  background-color: var(--main-bg-color);
+  font-family: sans-serif;
+  position: relative;
+}
+
+h1{
+  font-size: 36px;
+}
+
+p{
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.carousel-container {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.carousel-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.site-title {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 55%;
+  width: 450px;
+  font-size: 40px;
+  padding: 10px;
+  background-color: var(--btn-bg-color);
+  color: white;
+}
+
+nav {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline;
+  font-size: 26px;
+  background: white;
+  width: 180px;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 5px 5px darkgray;
+}
+
+.section-title {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  background-color: var(--btn-bg-color);
+  width: 450px;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.about-section {
+  background-color: var(--section-bg-color);
+  color: black;
+  padding: 30px 45px;
+  margin: 20px;
+  line-height: 26px;
+  opacity: 0;
+}
+
+.about-section p {
+  margin: 10px 0;
+}
+
+.projects-section {
+  padding: 25px 0 150px 0;
+  opacity: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--section-bg-color);
+  margin: 0 20px;
+  padding: 20px 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+}
+
+.thumbnail {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  /* opacity: 1;
+  transition: opacity 0.6s; */
+}
+
+.card-description {
+  position: absolute;
+  text-align: center;
+  background: var(--btn-bg-color);
+  color: white;
+  font-size: 22px;
+  padding-top: 12px;
+  top: 75%;
+  bottom: 30px;
+  left: 5px;
+  right: 5px;
+  overflow: hidden;
+  /* transition: top 0.6s; */
+}
+
+
+
+
+
+
+
+footer {
+  background-color: #333;
+  color: #EEE;
+  font-size: 16px;
+  line-height: 42px;
+  padding: 15px 10px 50px 20px;
+  right: 0;
+  left: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 544px) {
+  footer {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
