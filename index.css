@@ -1,9 +1,39 @@
 body{
   margin: 0px;
-  background-color: #EEE;
+  background-color: #FEFEFE;
   font-family: sans-serif;
   position: relative;
 }
+
+.carousel-container {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #022D41;
+  position: relative;
+}
+
+.carousel-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline;
+  font-size: 26px;
+  background: white;
+  width: 160px;
+  text-align: center;
+}
+
+
 
 h1{
   font-size: 3em;
