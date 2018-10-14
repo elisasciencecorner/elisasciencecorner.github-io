@@ -5,6 +5,19 @@ body{
   position: relative;
 }
 
+h1{
+  font-size: 3em;
+}
+
+p{
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .carousel-container {
   width: 100%;
   padding: 50px 0;
@@ -30,23 +43,23 @@ nav a {
   font-size: 26px;
   background: white;
   width: 160px;
+  padding: 5px 0;
   text-align: center;
+  box-shadow: 5px 5px darkgray;
 }
 
-
-
-h1{
-  font-size: 3em;
+.about-section {
+  background-color: #FEFEFE;
+  color: black;
+  padding: 30px 60px;
+  line-height: 26px;
 }
 
-p{
-  font-size: 1.5em;
+.about-section p {
+  /* margin-bottom: 6px; */
+  margin: 10px 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
 
 
 
