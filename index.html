@@ -16,6 +16,34 @@
     <style>
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+      $(window).scroll(function() {
+        var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (pagePosition > 50) {
+          showSection("about");
+        }
+
+        if (pagePosition > 400) {
+          showSection("projects");
+        }
+      });
+
+
+      function showSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.style.opacity = "1";
+        section.style.transition = "0.5s ease 0.5s";
+      }
+
+    </script>
+
+  </head>
+
+
   <body>
     <div class="carousel-container">
       <img src="img/03_s.jpg">
@@ -31,22 +59,22 @@
       </nav>
     </div>
 
-    <div class="about-section">
+    <div class="section-title">Sharing Knowledge</div>
+    <div class="about-section" id="about">
       <p>Welcome to my collection of past and present research projects, fascinating scientific things, from bench to mobile phone.</p>
       <p>The goal of this website is to contribute actively in the dissemination of scientific knowledge to the general public and specifically to young students.</p>
       <p>To show how science can impact everyday life is the first step to reduce the gap between daily discovery from the lab and the outside world.</p>
     </div>
 
-    <div class="projects-section">
-      <div class="section-title">Latest Projects</div>
-
+    <div class="section-title">Latest Projects</div>
+    <div class="projects-section" id="projects">
       <div class="projects-container">
         <a class="card" href="#">
           <img class="thumbnail"
           src="img/HH_cKit,CD31.jpg"
           alt=".">
           <span class="card-description">
-            HH_cKit,CD31
+            Breast Cancer
           </span>
         </a>
 
@@ -55,13 +83,13 @@
           src="img/Icon_Algae.jpg"
           alt=".">
           <span class="card-description">
-            Algae
+            Toxic Algae
           </span>
         </a>
 
         <a class="card" href="#">
           <img class="thumbnail"
-          src="img/Icon_Exo.png"
+          src="img/exosomes_Icon.png"
           alt=".">
           <span class="card-description">
             Exosomes
