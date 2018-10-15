@@ -27,7 +27,7 @@ a {
 
 .carousel-container {
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   position: relative;
   margin-bottom: 150px;
 }
@@ -89,7 +89,7 @@ nav a {
   background-color: var(--section-bg-color);
   color: black;
   padding: 30px 45px;
-  margin: var(--side-margin);
+  margin: 25px var(--side-margin);
   line-height: 26px;
   opacity: 0;
 }
