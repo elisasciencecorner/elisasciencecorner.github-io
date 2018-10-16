@@ -25,11 +25,15 @@
         var windowHeight = document.body.clientHeight;
 
         if (pagePosition > windowHeight * 0.1) {
-          showSection("about");
+          showSection("first-sec");
         }
 
         if (pagePosition > windowHeight * 0.35) {
-          showSection("projects");
+          showSection("second-sec");
+        }
+
+        if (pagePosition > windowHeight * 0.45) {
+          showSection("third-sec");
         }
       });
 
@@ -72,8 +76,32 @@
       </nav>
     </div>
 
-    <div class="section-title">Sharing Knowledge // Projects</div>
+    <div class="section-title">Research Description</div>
+    <div class="section" id="first-sec">
+      <p>The core expertise of the group involves the design, production and purification of recombinant proteins, specifically antibody fragments. We have libraries available that can be used for different applications.</p>
 
+      <div class="centered-container">
+        <div class="card">
+          <img src="img/project01.png" class="thumbnail">
+          <span class="card-overlay-descr">DNA design</span>
+        </div>
+        <div class="card">
+          <img src="img/project02.png" class="thumbnail">
+          <span class="card-overlay-descr">Protein production and purification</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="second-sec">
+      <p>The specific kind of antibody fragment tht we use is in the form of VHH. This is derived from in vitro engineering natural antibodies from Lamas. Pools of about billions of different VHH sequences are introduced into phage display libraries for convenient and flexible screening.</p>
+      <p>The in vitro selection from such libraries can be easily performed on any antigen of choice, from whole cells to purified proteins.</p>
+      <p>VHH have many useful features: they are extremely stable, easy and cheap to produce as a ready to use reagents.</p>
+    </div>
+
+    <div class="section-title">Active Projects</div>
+    <div class="section" id="third-sec">
+      <p></p>
+    </div>
 
 
     <footer>

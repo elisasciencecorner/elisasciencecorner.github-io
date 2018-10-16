@@ -85,7 +85,7 @@ nav a {
   padding: 10px;
 }
 
-.about-section {
+.section {
   background-color: var(--section-bg-color);
   color: black;
   padding: 30px 45px;
@@ -94,11 +94,11 @@ nav a {
   opacity: 0;
 }
 
-.about-section p {
+.section p {
   margin: 10px 0;
 }
 
-.about-section .right {
+.section .right {
   text-align: right;
   margin-top: 50px;
   padding-left: 100px;
@@ -116,6 +116,12 @@ nav a {
   justify-content: space-around;
   background-color: var(--section-bg-color);
   padding: 20px 0;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 -50px 0;
 }
 
 .card {
@@ -146,7 +152,23 @@ nav a {
   /* transition: top 0.6s; */
 }
 
+.card-overlay-descr {
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  width: 75%;
+  height: 30%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
 
+#second-sec {
+  margin-top: 50px;
+}
 
 
 
