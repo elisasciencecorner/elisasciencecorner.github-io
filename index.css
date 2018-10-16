@@ -61,11 +61,11 @@ nav {
 nav a {
   display: inline;
   font-size: 26px;
-  background: white;
+  background: var(--section-bg-color);
   width: 180px;
   padding: 5px 0;
   text-align: center;
-  box-shadow: 5px 5px var(--section-bg-color);
+  /* box-shadow: 5px 5px var(--section-bg-color); */
 }
 
 .nav-thumb {
@@ -157,14 +157,20 @@ footer {
   color: #EEE;
   font-size: 16px;
   line-height: 42px;
-  padding: 15px 10px 50px var(--side-margin);
+  padding: 15px var(--side-margin) 50px var(--side-margin);
   right: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer ul {
   list-style: none;
   padding-left: 0;
+}
+
+footer ul+ul {
+  text-align: right;
 }
 
 footer a {
