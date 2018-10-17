@@ -66,6 +66,13 @@ nav a {
   padding: 5px 0;
   text-align: center;
   /* box-shadow: 5px 5px var(--section-bg-color); */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--btn-bg-color);
+  color: white;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .nav-thumb {
@@ -121,7 +128,18 @@ nav a {
 .centered-container {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0 -50px 0;
+  margin: 20px 0;
+}
+
+#first-sec .centered-container {
+  margin-bottom: -50px;
+}
+
+.centered-container p {
+  padding-left: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
 .card {
@@ -170,7 +188,11 @@ nav a {
   margin-top: 50px;
 }
 
-
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
 
 
 
