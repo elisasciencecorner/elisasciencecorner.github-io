@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Elisa Science Corner" />
+    <meta property="og:description" content="!" />
+
+    <title>Elisa Science Corner</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      $(window).scroll(function() {
+        var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        var windowHeight = document.body.clientHeight;
+        console.log(pagePosition/windowHeight);
+
+        if (pagePosition > windowHeight * 0.1) {
+          showSection("main-sec");
+          showSectionDelayed("card-overlay-descr");
+        }
+
+        if (pagePosition > windowHeight * 0.12) {
+          showSection("g1229");
+        }
+
+        if (pagePosition > windowHeight * 0.25) {
+          showSection("redTide");
+        }
+
+        if (pagePosition > windowHeight * 0.35) {
+          showSection("iconAlgae");
+        }
+
+        if (pagePosition > windowHeight * 0.45) {
+          showSection("gfp");
+        }
+      });
+
+
+      function showSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.style.opacity = "1";
+        section.style.transition = "0.5s ease";
+      }
+
+      function showSectionDelayed(sectionClass) {
+        var sectionList = document.getElementsByClassName(sectionClass);
+        for (var i=0; i < sectionList.length; i++) {
+          sectionList[i].style.opacity = "1";
+        }
+      }
+
+    </script>
+
+  </head>
+
+
+  <body>
+    <div class="carousel-container">
+      <img class="carousel-img" src="img/03_s.jpg">
+
+      <a href="index.html" class="site-title">Elisa's Science Corner</a>
+
+      <nav>
+        <a href="projects.html">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>Projects</span>
+        </a>
+        <a href="#">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>Collaboration</span>
+        </a>
+        <a href="#">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>For Students</span>
+        </a>
+        <a href="about.html">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>About Me</span>
+        </a>
+        <!-- <a href="#">Contact Me</a> -->
+      </nav>
+    </div>
+
+    <div class="section-title">VHH For Algae</div>
+    <div class="section" id="main-sec">
+
+      <div class="centered-container dissolveIn" id="g1229">
+        <p>Antibodies are widely used as reagents in biomedicine both for research and dianostics.<br>
+        However the availability dedicated to algae study and detection is limited, not to mention that cheap and reliable antibodies are not available.<br>
+        The understanding of algal biology and the monitoring of their blooms are great challenges that can be addressed from different perspectives.</p>
+        <img class="thumbnail" src="img/g1229.png" alt=".">
+      </div>
+
+      <div class="centered-container dissolveIn" id="redTide">
+        <img class="thumbnail wide" src="img/RedTide.png" alt=".">
+        <p>For this reason unicellular algae are the perfect target in the development of new strategies based on recombinant nanobodies.</p>
+      </div>
+
+      <div class="centered-container dissolveIn" id="iconAlgae">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+        <img class="thumbnail" src="img/Icon_Algae.jpg" alt=".">
+      </div>
+
+      <div class="centered-container dissolveIn" id="gfp">
+        <img class="img-large" src="img/B6_C1-GFP_200x.png" alt=".">
+      </div>
+
+    </div>
+
+
+    <div class="bottom-container">
+      <a href="index.html" class="section-title">Back to homepage</a>
+      <a href="about.html" class="section-title">Learn more</a>
+    </div>
+
+    <footer>
+      <ul>
+        <li>Website by <a href="https://www.marcovidonis.com" target="_none">Marco Vidonis</a></li>
+        <li>© Elisa Mazzega 2018</li>
+      </ul>
+
+      <ul>
+        <li>University of Nova Gorica</li>
+        <li>Laboratory for Environmental and Life Sciences</li>
+      </ul>
+    </footer>
+
+  </body>
+
+</html>
