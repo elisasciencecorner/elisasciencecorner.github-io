@@ -27,7 +27,7 @@ a {
 
 .carousel-container {
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   position: relative;
   margin-bottom: 150px;
 }
@@ -61,11 +61,18 @@ nav {
 nav a {
   display: inline;
   font-size: 26px;
-  background: white;
+  background: var(--section-bg-color);
   width: 180px;
   padding: 5px 0;
   text-align: center;
-  box-shadow: 5px 5px var(--section-bg-color);
+  /* box-shadow: 5px 5px var(--section-bg-color); */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--btn-bg-color);
+  color: white;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .nav-thumb {
@@ -85,20 +92,20 @@ nav a {
   padding: 10px;
 }
 
-.about-section {
+.section {
   background-color: var(--section-bg-color);
   color: black;
   padding: 30px 45px;
-  margin: var(--side-margin);
+  margin: 25px var(--side-margin);
   line-height: 26px;
   opacity: 0;
 }
 
-.about-section p {
+.section p {
   margin: 10px 0;
 }
 
-.about-section .right {
+.section .right {
   text-align: right;
   margin-top: 50px;
   padding-left: 100px;
@@ -116,6 +123,23 @@ nav a {
   justify-content: space-around;
   background-color: var(--section-bg-color);
   padding: 20px 0;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+#first-sec .centered-container {
+  margin-bottom: -50px;
+}
+
+.centered-container p {
+  padding-left: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 
 .card {
@@ -146,9 +170,31 @@ nav a {
   /* transition: top 0.6s; */
 }
 
+.card-overlay-descr {
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  width: 75%;
+  height: 30%;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease 1s;
+}
 
+#second-sec {
+  margin-top: 50px;
+}
 
-
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
 
 
 
@@ -157,14 +203,20 @@ footer {
   color: #EEE;
   font-size: 16px;
   line-height: 42px;
-  padding: 15px 10px 50px var(--side-margin);
+  padding: 15px var(--side-margin) 50px var(--side-margin);
   right: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer ul {
   list-style: none;
   padding-left: 0;
+}
+
+footer ul+ul {
+  text-align: right;
 }
 
 footer a {

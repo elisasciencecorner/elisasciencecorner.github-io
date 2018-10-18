@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="Elisa Science Corner" />
+    <meta property="og:description" content="!" />
+
+    <title>Elisa Science Corner</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <style>
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+      $(window).scroll(function() {
+        var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        var windowHeight = document.body.clientHeight;
+
+        if (pagePosition > windowHeight * 0.1) {
+          showSection("first-sec");
+          showSectionDelayed("card-overlay-descr");
+        }
+
+        if (pagePosition > windowHeight * 0.15) {
+          showSection("second-sec");
+        }
+
+        if (pagePosition > windowHeight * 0.4) {
+          showSection("third-sec");
+        }
+      });
+
+
+      function showSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.style.opacity = "1";
+        section.style.transition = "0.5s ease";
+      }
+
+      function showSectionDelayed(sectionClass) {
+        var sectionList = document.getElementsByClassName(sectionClass);
+        for (var i=0; i < sectionList.length; i++) {
+          sectionList[i].style.opacity = "1";
+        }
+      }
+
+    </script>
+
+  </head>
+
+
+  <body>
+    <div class="carousel-container">
+      <img class="carousel-img" src="img/03_s.jpg">
+
+      <a href="index.html" class="site-title">Elisa's Science Corner</a>
+
+      <nav>
+        <a href="projects.html">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>Projects</span>
+        </a>
+        <a href="#">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>Collaboration</span>
+        </a>
+        <a href="#">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>For Students</span>
+        </a>
+        <a href="#">
+          <!-- <img class="nav-thumb" src="img/pokeball.png"> -->
+          <span>About Me</span>
+        </a>
+        <!-- <a href="#">Contact Me</a> -->
+      </nav>
+    </div>
+
+    <div class="section-title">Research Description</div>
+    <div class="section" id="first-sec">
+      <p>The core expertise of the group involves the design, production and purification of recombinant proteins, specifically antibody fragments. We have libraries available that can be used for different applications.</p>
+
+      <div class="centered-container">
+        <div class="card">
+          <img src="img/project01.png" class="thumbnail">
+          <span class="card-overlay-descr" id="card-overlay-descr">DNA design</span>
+        </div>
+        <div class="card">
+          <img src="img/project02.png" class="thumbnail">
+          <span class="card-overlay-descr" id="card-overlay-descr">Protein production and purification</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="second-sec">
+      <p>The specific kind of antibody fragment tht we use is in the form of VHH. This is derived from in vitro engineering natural antibodies from Lamas. Pools of about billions of different VHH sequences are introduced into phage display libraries for convenient and flexible screening.</p>
+      <p>The in vitro selection from such libraries can be easily performed on any antigen of choice, from whole cells to purified proteins.</p>
+      <p>VHH have many useful features: they are extremely stable, easy and cheap to produce as a ready to use reagents.</p>
+    </div>
+
+    <div class="section-title">Active Projects</div>
+    <div class="section" id="third-sec">
+      <div class="centered-container">
+        <div class="card">
+          <img class="thumbnail" src="img/Icon_Algae.jpg" alt=".">
+          <span class="card-description">Toxic Algae</span>
+        </div>
+        <p>Tiny unicellular algae can pose great danger due to their ability to produce toxins. When they are growing in great numbers they can be the cause of harmful algal bloom (HAB).<br>
+        Antibodies can foster the understanding of their biology and the possibility for detection.</p>
+      </div>
+
+      <div class="centered-container">
+        <div class="card">
+          <img class="thumbnail" src="img/exosomes_Icon.png" alt=".">
+          <span class="card-description">Exosomes</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>
+        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+
+      <div class="centered-container">
+        <div class="card">
+          <img class="thumbnail" src="img/HH_cKit,CD31.jpg" alt=".">
+          <span class="card-description">Cell Biology</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>
+        Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <a href="index.html" class="section-title">Back to homepage</a>
+      <a href="#" class="section-title">Learn more</a>
+    </div>
+
+    <footer>
+      <ul>
+        <li>Website by <a href="https://www.marcovidonis.com" target="_none">Marco Vidonis</a></li>
+        <li>© Elisa Mazzega 2018</li>
+      </ul>
+
+      <ul>
+        <li>University of Nova Gorica</li>
+        <li>Laboratory for Environmental and Life Sciences</li>
+      </ul>
+
+
+    </footer>
+  </body>
+
+</html>
