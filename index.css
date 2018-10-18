@@ -182,6 +182,8 @@ nav a:hover {
   left: 0;
   right: 0;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease 1s;
 }
 
 #second-sec {

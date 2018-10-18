@@ -26,6 +26,7 @@
 
         if (pagePosition > windowHeight * 0.1) {
           showSection("first-sec");
+          showSectionDelayed("card-overlay-descr");
         }
 
         if (pagePosition > windowHeight * 0.15) {
@@ -44,6 +45,13 @@
         section.style.transition = "0.5s ease";
       }
 
+      function showSectionDelayed(sectionClass) {
+        var sectionList = document.getElementsByClassName(sectionClass);
+        for (var i=0; i < sectionList.length; i++) {
+          sectionList[i].style.opacity = "1";
+        }
+      }
+
     </script>
 
   </head>
@@ -53,7 +61,7 @@
     <div class="carousel-container">
       <img class="carousel-img" src="img/03_s.jpg">
 
-      <div class="site-title">Elisa's Science Corner</div>
+      <a href="index.html" class="site-title">Elisa's Science Corner</a>
 
       <nav>
         <a href="projects.html">
@@ -83,11 +91,11 @@
       <div class="centered-container">
         <div class="card">
           <img src="img/project01.png" class="thumbnail">
-          <span class="card-overlay-descr">DNA design</span>
+          <span class="card-overlay-descr" id="card-overlay-descr">DNA design</span>
         </div>
         <div class="card">
           <img src="img/project02.png" class="thumbnail">
-          <span class="card-overlay-descr">Protein production and purification</span>
+          <span class="card-overlay-descr" id="card-overlay-descr">Protein production and purification</span>
         </div>
       </div>
     </div>
@@ -105,7 +113,7 @@
           <img class="thumbnail" src="img/Icon_Algae.jpg" alt=".">
           <span class="card-description">Toxic Algae</span>
         </div>
-        <p>Tiny unicellular algae can pose great danger due to their ability to produce toxins. When they are frowing in greayt numbers they can be the cause of harmful algal bloom (HAB).<br>
+        <p>Tiny unicellular algae can pose great danger due to their ability to produce toxins. When they are growing in great numbers they can be the cause of harmful algal bloom (HAB).<br>
         Antibodies can foster the understanding of their biology and the possibility for detection.</p>
       </div>
 
