@@ -135,6 +135,10 @@ nav a:hover {
   margin-bottom: -50px;
 }
 
+#main-sec .centered-container {
+  padding-bottom: 30px;
+}
+
 .centered-container p {
   padding-left: 20px;
   margin: auto;
@@ -153,6 +157,21 @@ nav a:hover {
   object-fit: cover;
   /* opacity: 1;
   transition: opacity 0.6s; */
+}
+
+.wide {
+  width: auto;
+}
+
+.img-medium {
+  /* width: 400px; */
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-large {
+  height: 500px;
+  object-fit: cover;
 }
 
 .card-description {
@@ -284,11 +303,11 @@ footer a {
     padding: 5px;
   }
 
-  .about-section {
+  .section {
     padding: 15px 20px;
   }
 
-  .about-section .right {
+  .section .right {
     padding-left: 50px;
   }
 
