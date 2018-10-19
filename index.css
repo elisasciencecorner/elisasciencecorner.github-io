@@ -32,6 +32,10 @@ a {
   margin-bottom: 150px;
 }
 
+.secondary-carousel {
+  /* margin-bottom: 0; */
+}
+
 .carousel-img {
   object-fit: cover;
   width: 100%;
@@ -215,6 +219,10 @@ nav a:hover {
   margin: 20px 0;
 }
 
+.bottom-container .section-title {
+  width: 400px;
+}
+
 
 
 footer {
@@ -273,6 +281,11 @@ footer a {
     height: 75px;
   }
 
+  .bottom-container .section-title{
+    font-size: 22px;
+    width: 220px;
+  }
+
 }
 
 @media screen and (max-width: 544px) {
@@ -284,14 +297,30 @@ footer a {
     margin-bottom: 250px;
   }
 
+  .secondary-carousel {
+    margin-bottom: 250px;
+  }
+
   nav {
     flex-wrap: wrap;
     top: 65%;
   }
 
+  .secondary-nav {
+    flex-direction: column;
+    align-items: center;
+    top: 95%;
+  }
+
   nav a {
     width: 150px;
+    padding: 15px 0;
     margin: 20px;
+  }
+
+  .secondary-nav a {
+    width: 100%;
+    margin: 5px;
   }
 
   .site-title {
@@ -314,11 +343,44 @@ footer a {
     padding-left: 50px;
   }
 
+  .centered-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .centered-container p {
+    padding-left: 0;
+  }
+
+  #first-sec .centered-container {
+    margin-bottom: 0px;
+  }
+
+  #third-sec {
+    /* padding: 15px 10px; */
+  }
+
+  #g1229, #iconAlgae {
+    flex-direction: column-reverse;
+  }
+
+  .bottom-container .section-title{
+    font-size: 18px;
+    width: 160px;
+  }
+
   footer {
     padding: 10px;
     font-size: 13px;
     line-height: 25px;
+    flex-direction: column-reverse;
   }
+
+  footer ul+ul {
+    text-align: left;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -329,5 +391,10 @@ footer a {
 
   .nav-thumb {
     height: 65px;
+  }
+
+  .bottom-container .section-title{
+    font-size: 16px;
+    width: 130px;
   }
 }
