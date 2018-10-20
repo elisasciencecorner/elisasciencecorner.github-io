@@ -51,16 +51,9 @@
           showSection("interested");
         }
 
-        if (pagePosition > windowHeight * 0.5) {
-          showSection("collaborators");
-        }
-
-        if (pagePosition > windowHeight * 0.52) {
-          showSection("4th-sec");
-        }
-
-        if (pagePosition > windowHeight * 0.68) {
-          showSection("5th-sec");
+        if (pagePosition > windowHeight * 0.42) {
+          showSection("collab1");
+          showSection("collab2");
         }
       });
 
@@ -109,10 +102,10 @@
     </div>
 
     <div class="section-title">Let's work together!</div>
-    <div class="section" id="main-sec">
+    <div class="section">
       <p class="large-text">As experts on antibody biotechnology,<br>we are always looking for new challenges for their application: </p>
 
-      <div class="centered-container large-text">
+      <div class="centered-container large-text dissolveIn" id="main-sec">
         <ul>
           <li>further validation with a wider array of targets</li>
           <li>implementation into monitoring schemes</li>
@@ -132,8 +125,8 @@
         </div>
       </div>
 
-      <p class="large-text" style="margin-top: 250px">Our main collaborators are:</p>
-      <div class="centered-container dissolveIn" id="collaborators">
+      <p class="large-text dissolveIn" id="collab1" style="margin-top: 200px">Our main collaborators are:</p>
+      <div class="centered-container dissolveIn" id="collab2">
         <div class="collab-logo">
           <img class="logo-thumb" src="img/logo/Logo_Uniud.png">
           <p>University of Udine</p>
