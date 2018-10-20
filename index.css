@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: #022D41;
   --section-bg-color: #1AA6B7;
-  --btn-bg-color: rgba(217, 236, 242, 0.5);
+  --btn-bg-color: rgb(217, 236, 242);
+  --btn-bg-color-fade: rgba(217, 236, 242, 0.5);
   --side-margin: 20px;
 }
 
@@ -23,6 +24,7 @@ p{
 a {
   color: inherit;
   text-decoration: inherit;
+  font-size: 18px;
 }
 
 .carousel-container {
@@ -49,7 +51,7 @@ a {
   width: 450px;
   font-size: 40px;
   padding: 10px;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-bg-color-fade);
   color: white;
 }
 
@@ -74,7 +76,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-bg-color-fade);
   color: white;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -90,7 +92,7 @@ nav a:hover {
   color: white;
   text-align: center;
   margin-top: 80px;
-  background-color: var(--btn-bg-color);
+  background-color: var(--btn-bg-color-fade);
   width: 450px;
   font-size: 40px;
   padding: 10px;
@@ -143,11 +145,23 @@ nav a:hover {
   padding-bottom: 30px;
 }
 
-.centered-container p {
+/* .centered-container p {
   padding-left: 20px;
   margin: auto;
   top: 0;
   bottom: 0;
+} */
+
+.centered-container .description {
+  padding-left: 20px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.description a {
+  color: var(--btn-bg-color);
+  
 }
 
 .card {
@@ -181,7 +195,7 @@ nav a:hover {
 .card-description {
   position: absolute;
   text-align: center;
-  background: var(--btn-bg-color);
+  background: var(--btn-bg-color-fade);
   color: white;
   font-size: 22px;
   padding: 12px 0;
