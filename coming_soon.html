@@ -10,39 +10,58 @@
     <title>Elisa Science Corner</title>
 
     <link rel="stylesheet" href="index.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(document).click(function(event) {
+          if(!$(event.target).closest('#menuButton, .secondary-nav').length) {
+            $(".secondary-nav").css("height", "43px");
+            $("#curtain").css("display", "none");
+          }
+        });
+
+        $("#menuButton").on("click",function() {
+          if($(".secondary-nav").css("height")=="43px") {
+            $(".secondary-nav").css("height", "260px");
+            $("#curtain").css("display", "block");
+          } else {
+            $(".secondary-nav").css("height", "43px");
+            $("#curtain").css("display", "none");
+          }
+        });
+      });
+    </script>
 
 		<style>
 		</style>
 	</head>
 
 	<body>
-		<div class="carousel-container">
+    <div id="curtain"></div>
+
+		<div class="carousel-container secondary-carousel">
 			<img class="carousel-img" src="img/03_s.jpg">
 
 			<a href="index.html" class="site-title">Elisa's Science Corner</a>
 
-			<nav class="secondary-nav">
-				<a href="projects.html">
-					<!-- <img class="nav-thumb" src="img/pokeball.png"> -->
-					<span>Projects</span>
-				</a>
-				<a href="#">
-					<!-- <img class="nav-thumb" src="img/pokeball.png"> -->
-					<span>Collaboration</span>
-				</a>
-				<a href="#">
-					<!-- <img class="nav-thumb" src="img/pokeball.png"> -->
-					<span>For Students</span>
-				</a>
-				<a href="about.html">
-					<!-- <img class="nav-thumb" src="img/pokeball.png"> -->
-					<span>About Me</span>
-				</a>
-				<!-- <a href="#">Contact Me</a> -->
-			</nav>
+      <nav class="secondary-nav">
+        <a id="menuButton"><i class="fas fa-bars"></i></a>
+        <a href="projects.html">
+          <span>Projects</span>
+        </a>
+        <a href="about.html">
+          <span>Collaboration</span>
+        </a>
+        <a href="coming_soon.html">
+          <span>For Students</span>
+        </a>
+        <a href="about.html">
+          <span>About Me</span>
+        </a>
+      </nav>
 		</div>
 
     <div class="section-title">Coming Soon!</div>

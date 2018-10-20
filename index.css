@@ -56,6 +56,10 @@ a {
   color: white;
 }
 
+#menuButton, #curtain {
+  display: none;
+}
+
 nav {
   position: absolute;
   /* bottom: 40px; */
@@ -76,8 +80,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--btn-bg-color-fade);
-  color: white;
+  background-color: var(--btn-bg-color);
+  /* color: white; */
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -262,6 +266,10 @@ nav a:hover {
   background-color: var(--active-color);
 }
 
+.active:hover {
+  background-color: var(--active-color);
+}
+
 footer {
   background-color: #333;
   color: #EEE;
@@ -364,7 +372,7 @@ footer a {
   }
 
   .secondary-carousel {
-    margin-bottom: 250px;
+    margin-bottom: 50px;
   }
 
   nav {
@@ -372,10 +380,36 @@ footer a {
     top: 65%;
   }
 
+  #curtain {
+    position: fixed;
+    z-index: 200;
+    width: 5000px;
+    height: 5000px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  #menuButton {
+    display: block;
+    /* width: 100%; */
+    text-align: right;
+  }
+
+  #menuButton i {
+    padding-right: 20px;
+  }
+
+  #menuButton:hover {
+    cursor: pointer;
+  }
+
   .secondary-nav {
+    top: 230px;
     flex-direction: column;
     align-items: center;
-    top: 95%;
+    height: 43px;
+    overflow: hidden;
+    transition: height 0.4s;
+    z-index: 300;
   }
 
   nav a {
