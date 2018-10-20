@@ -130,7 +130,6 @@ nav a:hover {
   padding: 30px 45px;
   margin: 25px var(--side-margin);
   line-height: 26px;
-  opacity: 0;
 }
 
 .section p {
@@ -176,7 +175,7 @@ nav a:hover {
 }
 
 .centered-container .description {
-  padding-left: 20px;
+  padding: 0 20px;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -380,10 +379,14 @@ footer a {
     width: 220px;
   }
 
+  .centered-container .description {
+    padding: 0 10px;
+  }
+
   .wide {
-    height: 200px;
+    height: 180px;
     width: 350px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .img-large {
@@ -406,8 +409,12 @@ footer a {
   }
 
   .large-text {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
+  }
+
+  .large-text ul {
+    font-size: 22px;
   }
 
   nav {
@@ -425,7 +432,6 @@ footer a {
 
   #menuButton {
     display: block;
-    /* width: 100%; */
     text-align: right;
   }
 
@@ -443,7 +449,7 @@ footer a {
     align-items: center;
     height: 43px;
     overflow: hidden;
-    transition: height 0.4s;
+    /* transition: height 0.4s; */
     z-index: 300;
   }
 

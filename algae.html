@@ -45,10 +45,12 @@
 
         if (pagePosition > windowHeight * 0.1) {
           showSection("main-sec");
-          showSectionDelayed("card-overlay-descr");
         }
 
         if (pagePosition > windowHeight * 0.12) {
+          showSection("p1");
+          showSection("p2");
+          showSection("p3");
           showSection("g1229");
         }
 
@@ -112,14 +114,14 @@
     <div class="section-title">Reagents for microalgae</div>
     <div class="section" id="main-sec">
 
-      <div class="centered-container dissolveIn" id="g1229">
+      <div class="centered-container">
         <div class="description">
           <p>Unicellular algae can pose great danger to human health due to their ability to produce toxins. When they are growing in great numbers (bloom) they can be the cause of harmful algal bloom (HAB).</p>
-          <p>The understanding of algal biology and the monitoring of their blooms are great challenges that can be addressed from different perspectives.</p>
-          <p>However the availability dedicated to the study and detection of planktonic organisms is limited.</p>
-          <p>Not to mention that cheap and reliable antibodies are not available.</p>
+          <p class="dissolveIn" id="p1">The understanding of algal biology and the monitoring of their blooms are great challenges that can be addressed from different perspectives.</p>
+          <p class="dissolveIn" id="p2">However the availability dedicated to the study and detection of planktonic organisms is limited.</p>
+          <p class="dissolveIn" id="p3">Not to mention that cheap and reliable antibodies are not available.</p>
         </div>
-        <img class="img-small" src="img/g1229.png" alt=".">
+        <img class="img-small dissolveIn" src="img/g1229.png" id="g1229" alt=".">
       </div>
 
       <div class="centered-container dissolveIn" id="redTide">
