@@ -41,27 +41,26 @@
         var pagePosition = document.documentElement.scrollTop || document.body.scrollTop;
 
         var windowHeight = document.body.clientHeight;
-        console.log(pagePosition/windowHeight);
 
         if (pagePosition > windowHeight * 0.1) {
           showSection("main-sec");
           showSectionDelayed("card-overlay-descr");
         }
 
-        if (pagePosition > windowHeight * 0.12) {
-          showSection("g1229");
-        }
-
         if (pagePosition > windowHeight * 0.25) {
-          showSection("redTide");
+          showSection("interested");
         }
 
-        if (pagePosition > windowHeight * 0.42) {
-          showSection("iconAlgae");
+        if (pagePosition > windowHeight * 0.5) {
+          showSection("collaborators");
         }
 
-        if (pagePosition > windowHeight * 0.55) {
-          showSection("gfp");
+        if (pagePosition > windowHeight * 0.52) {
+          showSection("4th-sec");
+        }
+
+        if (pagePosition > windowHeight * 0.68) {
+          showSection("5th-sec");
         }
       });
 
@@ -97,7 +96,7 @@
         <a href="projects.html">
           <span>Projects</span>
         </a>
-        <a href="collaboration.html">
+        <a class="active">
           <span>Collaboration</span>
         </a>
         <a href="coming_soon.html">
@@ -109,38 +108,56 @@
       </nav>
     </div>
 
-    <div class="section-title">Reagents for microalgae</div>
+    <div class="section-title">Let's work together!</div>
     <div class="section" id="main-sec">
+      <p class="large-text">As experts on antibody biotechnology,<br>we are always looking for new challenges for their application: </p>
 
-      <div class="centered-container dissolveIn" id="g1229">
-        <div class="description">
-          <p>Unicellular algae can pose great danger to human health due to their ability to produce toxins. When they are growing in great numbers (bloom) they can be the cause of harmful algal bloom (HAB).</p>
-          <p>The understanding of algal biology and the monitoring of their blooms are great challenges that can be addressed from different perspectives.</p>
-          <p>However the availability dedicated to the study and detection of planktonic organisms is limited.</p>
-          <p>Not to mention that cheap and reliable antibodies are not available.</p>
+      <div class="centered-container large-text">
+        <ul>
+          <li>further validation with a wider array of targets</li>
+          <li>implementation into monitoring schemes</li>
+          <li>development of reagents for the detection of new targets</li>
+        </ul>
+      </div>
+
+      <div class="centered-container dissolveIn" id="interested">
+        <div class="text-box">
+          <p class="large-text">If you are interested in testing...</p>
+          <p>... one of our nanobodies with your strain of <em>Alexandrium</em> spp, we are very happy to collaborate!</p>
         </div>
-        <img class="img-small" src="img/g1229.png" alt=".">
-      </div>
 
-      <div class="centered-container dissolveIn" id="redTide">
-        <img class="thumbnail wide" src="img/RedTide.png" alt=".">
-        <div class="description">
-          <p>For this reason unicellular algae are the perfect target in the development of new strategies based on recombinant nanobodies.</p>
+        <div class="text-box">
+          <p class="large-text">If you have a new target...</p>
+          <p>... and you are interested in engeneering nanobodies against it, we can start a project together!</p>
         </div>
       </div>
 
-      <div class="centered-container dissolveIn" id="iconAlgae">
-        <div class="description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+      <p class="large-text" style="margin-top: 250px">Our main collaborators are:</p>
+      <div class="centered-container dissolveIn" id="collaborators">
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Uniud.png">
+          <p>University of Udine</p>
         </div>
-        <img class="thumbnail" src="img/Icon_Algae.jpg" alt=".">
+
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_OGS.jpg">
+          <p>National Institute of Oceanography and Applied Geophysics (OGS), Trieste</p>
+        </div>
+
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Units.png">
+          <p>University of Trieste</p>
+        </div>
+
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Chemical instite.jpg">
+          <p>National Institute of Chemistry (KI), Ljubljana</p>
+        </div>
       </div>
 
-      <div class="centered-container dissolveIn" id="gfp">
-        <img class="img-large" src="img/B6_C1-GFP_200x.png" alt=".">
-      </div>
 
     </div>
+
 
 
     <div class="bottom-container">
