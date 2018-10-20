@@ -161,7 +161,10 @@ nav a:hover {
 
 .description a {
   color: var(--btn-bg-color);
-  
+}
+
+#g1229 .description {
+  padding-left: 0;
 }
 
 .card {
@@ -173,12 +176,15 @@ nav a:hover {
   height: 250px;
   width: 250px;
   object-fit: cover;
-  /* opacity: 1;
-  transition: opacity 0.6s; */
 }
 
 .wide {
-  width: auto;
+  width: 500px;
+}
+
+.img-small {
+  height: 200px;
+  object-fit: cover;
 }
 
 .img-medium {
@@ -281,6 +287,10 @@ footer a {
     align-items: center;
   }
 
+  .section {
+    padding: 10px;
+  }
+
   .card {
     width: 250px;
     margin-bottom: 30px;
@@ -298,6 +308,16 @@ footer a {
   .bottom-container .section-title{
     font-size: 22px;
     width: 220px;
+  }
+
+  .wide {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+  }
+
+  .img-large {
+    height: 400px;
   }
 
 }
@@ -360,11 +380,15 @@ footer a {
   .centered-container {
     flex-direction: column;
     align-items: center;
+    /* margin: 40px 0; */
+  }
+
+  .centered-container+.centered-container {
     margin: 40px 0;
   }
 
-  .centered-container p {
-    padding-left: 0;
+  .centered-container .description {
+    padding: 0 0 10px 0;
   }
 
   #first-sec .centered-container {
@@ -375,8 +399,13 @@ footer a {
     /* padding: 15px 10px; */
   }
 
-  #g1229, #iconAlgae {
+  #redTide {
     flex-direction: column-reverse;
+  }
+
+  .wide, .img-large {
+    width: 112%;
+    margin: 0 -20px;
   }
 
   .bottom-container .section-title{
