@@ -43,16 +43,16 @@
         var windowHeight = document.body.clientHeight;
 
         if (pagePosition > windowHeight * 0.1) {
-          showSection("first-sec");
+          showSection("main-sec");
           showSectionDelayed("card-overlay-descr");
         }
 
         if (pagePosition > windowHeight * 0.25) {
-          showSection("second-sec");
+          showSection("interested");
         }
 
-        if (pagePosition > windowHeight * 0.4) {
-          showSection("third-sec");
+        if (pagePosition > windowHeight * 0.5) {
+          showSection("collaborators");
         }
 
         if (pagePosition > windowHeight * 0.52) {
@@ -93,10 +93,10 @@
 
       <nav class="secondary-nav">
         <a id="menuButton"><i class="fas fa-bars"></i></a>
-        <a class="active">
+        <a href="projects.html">
           <span>Projects</span>
         </a>
-        <a href="collaboration.html">
+        <a class="active">
           <span>Collaboration</span>
         </a>
         <a href="coming_soon.html">
@@ -108,69 +108,57 @@
       </nav>
     </div>
 
-    <div class="section-title">Research Description</div>
-    <div class="section" id="first-sec">
-      <p>The core expertise of the group involves the design, production and purification of recombinant proteins, specifically antibody fragments. We have libraries available that can be used for different applications.</p>
+    <div class="section-title">Let's work together!</div>
+    <div class="section" id="main-sec">
+      <p class="large-text">As experts on antibody biotechnology,<br>we are always looking for new challenges for their application: </p>
 
-      <div class="centered-container">
-        <div class="card">
-          <img src="img/project01.png" class="thumbnail">
-          <span class="card-overlay-descr" id="card-overlay-descr">DNA design</span>
+      <div class="centered-container large-text">
+        <ul>
+          <li>further validation with a wider array of targets</li>
+          <li>implementation into monitoring schemes</li>
+          <li>development of reagents for the detection of new targets</li>
+        </ul>
+      </div>
+
+      <div class="centered-container dissolveIn" id="interested">
+        <div class="text-box">
+          <p class="large-text">If you are interested in testing...</p>
+          <p>... one of our nanobodies with your strain of <em>Alexandrium</em> spp, we are very happy to collaborate!</p>
         </div>
-        <div class="card">
-          <img src="img/project02.png" class="thumbnail">
-          <span class="card-overlay-descr" id="card-overlay-descr">Protein production and purification</span>
+
+        <div class="text-box">
+          <p class="large-text">If you have a new target...</p>
+          <p>... and you are interested in engeneering nanobodies against it, we can start a project together!</p>
         </div>
       </div>
-    </div>
 
-    <div class="section" id="second-sec">
-      <p>The specific kind of antibody fragment tht we use is in the form of VHH. This is derived from in vitro engineering natural antibodies from Lamas. Pools of about billions of different VHH sequences are introduced into phage display libraries for convenient and flexible screening.</p>
-      <p>The in vitro selection from such libraries can be easily performed on any antigen of choice, from whole cells to purified proteins.</p>
-      <p>VHH have many useful features: they are extremely stable, easy and cheap to produce as a ready to use reagents.</p>
-    </div>
+      <p class="large-text" style="margin-top: 250px">Our main collaborators are:</p>
+      <div class="centered-container dissolveIn" id="collaborators">
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Uniud.png">
+          <p>University of Udine</p>
+        </div>
 
-    <div class="section-title">Active Projects</div>
-    <div class="section" id="third-sec">
-      <div class="centered-container">
-        <a class="card" href="algae.html">
-          <img class="thumbnail" src="img/Icon_Algae.jpg" alt=".">
-          <span class="card-description">Algae Detection</span>
-        </a>
-        <div class="description">
-          <p>Tiny unicellular algae can pose great danger due to their ability to produce toxins. When they are growing in great numbers they can be the cause of harmful algal bloom (HAB).</p>
-          <p>Antibodies can foster the understanding of their biology and the possibility for detection.</p>
-          <a href="algae.html">Read more...</a>
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_OGS.jpg">
+          <p>National Institute of Oceanography and Applied Geophysics (OGS), Trieste</p>
+        </div>
+
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Units.png">
+          <p>University of Trieste</p>
+        </div>
+
+        <div class="collab-logo">
+          <img class="logo-thumb" src="img/logo/Logo_Chemical instite.jpg">
+          <p>National Institute of Chemistry (KI), Ljubljana</p>
         </div>
       </div>
+
+
     </div>
 
-    <div class="section" id="4th-sec">
-      <div class="centered-container">
-        <a class="card" href="coming_soon.html">
-          <img class="thumbnail" src="img/exosomes_Icon.png" alt=".">
-          <span class="card-description">Exosomes Research</span>
-        </a>
-        <div class="description">
-          <p>Exosomes are small vesicles (50-150nm) which are released from virtually every cell and are involved in cell-to-cell comunication.</p>
-          <p>Since they can be found in biological fluids such as blood, urine, saliva and milk, they are regaded as a potential biomarker for diagnostics.</p>
-          <a href="coming_soon.html">Read more...</a>
-        </div>
-      </div>
-    </div>
 
-    <div class="section" id="5th-sec">
-      <div class="centered-container">
-        <a class="card" href="cell_biology.html">
-          <img class="thumbnail" src="img/HH_cKit,CD31.jpg" alt=".">
-          <span class="card-description">Cell Biology</span>
-        </a>
-        <div class="description">
-          <p>Every cell is dressed with a complex array of surface proteins. These are important players in many of the biological functions of every cell but they can also be expressed under particolar conditions or be present only on a specific kind of cell.</p>
-          <a href="cell_biology.html">Read more...</a>
-        </div>
-      </div>
-    </div>
 
     <div class="bottom-container">
       <a href="index.html" class="section-title">Back to homepage</a>

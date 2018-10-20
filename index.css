@@ -22,6 +22,20 @@ p{
   font-size: 18px;
 }
 
+.large-text {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.large-text ul {
+  list-style: none;
+  font-size: 22px;
+}
+
+.large-text li {
+  margin-bottom: 30px;
+}
+
 a {
   color: inherit;
   text-decoration: inherit;
@@ -157,12 +171,9 @@ nav a:hover {
   padding-bottom: 30px;
 }
 
-/* .centered-container p {
-  padding-left: 20px;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-} */
+.text-box {
+  margin: 15px;
+}
 
 .centered-container .description {
   padding-left: 20px;
@@ -301,6 +312,25 @@ footer a {
   opacity: 0;
 }
 
+.collab-logo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.collab-logo {
+  text-align: center;
+
+}
+
+.logo-thumb {
+  width: 100px;
+  object-fit: scale-down;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 900px) {
 
   .carousel-img {
@@ -373,6 +403,11 @@ footer a {
 
   .secondary-carousel {
     margin-bottom: 50px;
+  }
+
+  .large-text {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   nav {
