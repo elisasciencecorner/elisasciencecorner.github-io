@@ -71,7 +71,6 @@ nav a {
   width: 180px;
   padding: 5px 0;
   text-align: center;
-  /* box-shadow: 5px 5px var(--section-bg-color); */
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -243,7 +242,11 @@ nav a:hover {
   width: 400px;
 }
 
-
+.notify-btn {
+  background-color: var(--btn-bg-color-fade);
+  color: white;
+  padding: 15px;
+}
 
 footer {
   background-color: #333;
