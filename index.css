@@ -330,6 +330,23 @@ footer a {
   margin-bottom: 10px;
 }
 
+#mce-EMAIL {
+  border: none;
+  height: 20px;
+  width: 220px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#mc-embedded-subscribe {
+  height: 30px;
+  width: 100px;
+  border: none;
+  font-size: 16px;
+  background-color: var(--btn-bg-color-fade);
+  color: white;
+}
+
 @media screen and (max-width: 900px) {
 
   .carousel-img {
@@ -539,6 +556,18 @@ footer a {
 
   footer ul+ul {
     text-align: left;
+  }
+
+  #mce-EMAIL {
+    width: 180px;
+  }
+
+  #mc-embedded-subscribe {
+    margin-top: 20px;
+  }
+
+  #mc-embedded-subscribe:hover {
+    cursor: pointer;
   }
 
 }
