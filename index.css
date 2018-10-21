@@ -185,6 +185,10 @@ nav a:hover {
   color: var(--btn-bg-color);
 }
 
+.text-link {
+  color: var(--btn-bg-color);
+}
+
 #g1229 .description {
   padding-left: 0;
 }
